@@ -1,15 +1,5 @@
-# eleventy-high-performance-blog
-
-A starter repository for building a blog with the [Eleventy static site generator](https://www.11ty.dev/) implementing a wide range of performance best practices.
-
-![Screenshot showing that the site achieves 100 points on Lighthouse by default](https://cdn.glitch.com/db98564e-04da-47bf-a3d6-70803c3d0fe7%2FScreen%20Shot%202020-09-04%20at%2012.07.27.png?v=1599214260591)
-
-Based on the awesome [eleventy-base-blog](https://github.com/11ty/eleventy-base-blog).
-
-## Demo
-
-- [Netlify Demo](https://eleventy-high-performance-blog-sample.industrialempathy.com/)
-- [Original site this template was based on](https://www.industrialempathy.com/)
+# 11ty-high-performance-blog
+A fork of [eleventy-high-performance-blog](https://github.com/google/eleventy-high-performance-blog) that leverages the [Classless.css](https://classless.de/) CSS file.
 
 ## Getting Started
 
