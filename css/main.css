@@ -2,6 +2,7 @@
 :root {
   --primary: #F1D7BB; 
   --primary-dark: #e7bf60;
+  --share-button: #E3AF78;
 }
 
 .test-dead-code-elimination-sentinel {
@@ -63,6 +64,9 @@ share-widget div {
 
 share-widget button {
   margin: 0;
+  background-color: var(--share-button);
+  border-color: var(--share-button);
+  padding: 0.75em 1.5em;
 }
 
 share-widget button:active {
@@ -70,6 +74,9 @@ share-widget button:active {
 }
 
 dialog {
+  border: 0;
+  padding: 1em;
+  margin: auto;
   background-color: #8dff80;
   position: fixed;
   opacity: 0.9;
