@@ -121,11 +121,9 @@ header aside {
   margin-bottom: 0.5em;
 }
 
-/* https://github.com/rsms/inter/blob/master/LICENSE.txt
-
-Copyright (c) 2016-2020 The Inter Project Authors.
-"Inter" is trademark of Rasmus Andersson.
-https://github.com/rsms/inter
+/* https://raw.githubusercontent.com/alerque/libertinus/master/OFL.txt
+Copyright © 2012-2021 The Libertinus Project Authors,
+with Reserved Font Name "Linux Libertine", "Biolinum", "STIX Fonts".
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
@@ -225,20 +223,70 @@ Single variable font.
 Note that you may want to do something like this to make sure you're serving
 constant fonts to older browsers:
 html {
-  font-family: 'Inter UI', sans-serif;
+  font-family: 'Libertinus Serif', Times, serif;
 }
 @supports (font-variation-settings: normal) {
   html {
-    font-family: 'Inter UI var', sans-serif;
+    font-family: 'Libertinus Serif var', sans-serif;
   }
 }
 */
-/* @font-face {
-  font-family: "Inter UI";
-  font-weight: 100 900;
-  font-style: oblique 0deg 10deg;
-  src: url("/fonts/Inter-3.19.var.woff2") format("woff2");
-} */
+
+@font-face {
+    font-family: "Libertinus Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local('Libertinus Sans'), url("/fonts/LibertinusSans-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Libertinus Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: local('Libertinus Sans'), url("/fonts/LibertinusSans-Italic.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Libertinus Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local('Libertinus Sans'), url("/fonts/LibertinusSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Libertinus Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Libertinus Serif'), url("/fonts/LibertinusSerif-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'Libertinus Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Libertinus Serif'), url("/fonts/LibertinusSerif-Italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'Libertinus Serif';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Libertinus Serif'), url("/fonts/LibertinusSerif-Semibold.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'Libertinus Serif';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Libertinus Serif'), url("/fonts/LibertinusSerif-SemiboldItalic.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'Libertinus Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Libertinus Serif'), url("/fonts/LibertinusSerif-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'Libertinus Serif';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Libertinus Serif'), url("/fonts/LibertinusSerif-BoldItalic.woff2") format("woff2");
+}
 
 /* Classless.css v1.0
 
@@ -252,6 +300,9 @@ Table of Contents:
 
 /* 1. Theme Settings ––––––––––––––––––––-–––––––––––––– */
 
+html {
+  font-family: Libertinus Serif, Libertinus Sans, Helvetica; 
+}
 
 :root, html[data-theme='sepia']{
 	--rem: 14pt;
