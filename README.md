@@ -1,6 +1,8 @@
 # 11ty-high-performance-blog
 A fork of [eleventy-high-performance-blog](https://github.com/google/eleventy-high-performance-blog) that leverages the [Classless.css](https://classless.de/) CSS file.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/819a3b7f-0529-4019-8276-f0928674578d/deploy-status)](https://app.netlify.com/sites/11ty-classless-high-performance-starter/deploys)
+
 ## Getting Started
 
 ### 1. Generate a new repository from this repository template
