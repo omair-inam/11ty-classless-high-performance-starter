@@ -2,6 +2,9 @@
 #layout: layouts/base.njk
 templateClass: tmpl-post
 numberedHeadings: true
+includeToc: true
+articleCssClass: toc-content
+mainCssClass: post-main
 ---
 {% extends "layouts/base.njk" %}
 
@@ -57,3 +60,18 @@ numberedHeadings: true
 </script>
 
 {% endblock %}
+
+   
+
+{% if includeToc %}
+   {% block additionalMainContent %}  
+   <div class="toc-container">
+      <div class="toc"></div>  
+   </div>
+   {% endblock %}
+
+   {% block postFooterContent %}
+      <script src="{{ "/js/tocbot.min.js" | url }}"></script>
+      <script src="{{ "/js/post.js" | url }}"></script>
+   {% endblock %}
+{% endif %}

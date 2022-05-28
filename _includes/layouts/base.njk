@@ -86,9 +86,9 @@
       {% endif %}
     </header>
 
-    <main>
+    <main class="{{ mainCssClass }}">
       {% if numberedHeadings %}
-      <article>
+      <article class="{{ articleCssClass }}">
       {% endif %}
         {% block article %}
           {{ content | safe }}
@@ -100,12 +100,18 @@
       {% if numberedHeadings %}
       </article>
       {% endif %}
+
+      {% block additionalMainContent %}
+
+      {% endblock %}
     </main>
 
     <footer>
       <a href="/about/">{{ metadata.author.name }}</a>
     </footer>
+    {% block postFooterContent %}
 
+    {% endblock %}
     <!-- Current page: {{ page.url | url }} -->
   </body>
 </html>

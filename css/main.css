@@ -121,6 +121,90 @@ header aside {
   margin-bottom: 0.5em;
 }
 
+/*
+ * https://github.com/tscanlin/tocbot
+ * SPDX-License-Identifier: MIT
+ */
+/*! purgecss start ignore */
+ .toc {
+  overflow-y: auto;
+  position: sticky;
+  top: 4rem;
+  align-self: start;
+}
+
+.toc>.toc-list {
+  overflow: hidden;
+  position: relative
+}
+
+.toc>.toc-list li {
+  list-style: none
+}
+
+.js-toc {
+  overflow-y: hidden
+}
+
+.toc-list {
+  margin: 0;
+  padding-left: 10px;
+  margin-left: 2rem;
+}
+
+a[href].toc-link {
+  color: currentColor;
+  height: 100%;
+  text-decoration: none;
+}
+
+a.toc-link:hover {
+  filter: none;
+}
+
+.is-collapsible {
+  max-height: 1000px;
+  overflow: hidden;
+  transition: all 300ms ease-in-out
+}
+
+.is-collapsed {
+  max-height: 0
+}
+
+.is-position-fixed {
+  position: fixed !important;
+  top: 0
+}
+
+.is-active-link {
+  font-weight: 700
+}
+
+.toc-link::before {
+  background-color: #EEE;
+  content: ' ';
+  display: inline-block;
+  height: inherit;
+  left: 0;
+  margin-top: -1px;
+  position: absolute;
+  width: 2px
+}
+
+.is-active-link::before {
+  background-color: var(--cemph);
+}
+/*! purgecss end ignore */
+
+/**
+ *  Additional styles
+ */
+.post-main {
+  display: grid;
+  grid-template-columns: 1fr 15em;
+}
+
 /* https://raw.githubusercontent.com/alerque/libertinus/master/OFL.txt
 Copyright © 2012-2021 The Libertinus Project Authors,
 with Reserved Font Name "Linux Libertine", "Biolinum", "STIX Fonts".
@@ -306,7 +390,7 @@ html {
 
 :root, html[data-theme='sepia']{
 	--rem: 14pt;
-	--width: 48rem;
+	--width: 65rem;
 	--font-p: 1em/1.6 'Libertinus Serif', Times, serif;
 	--font-h: 1em/1.6 'Libertinus Sans', Helvetica, sans;
 	--font-c: 85%/1.4 monospace;
