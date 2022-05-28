@@ -126,8 +126,9 @@ header aside {
  * SPDX-License-Identifier: MIT
  */
 /*! purgecss start ignore */
- .toc {
+.toc {
   overflow-y: auto;
+  /* sticky toc using CSS Grid */
   position: sticky;
   top: 4rem;
   align-self: start;
@@ -148,8 +149,7 @@ header aside {
 
 .toc-list {
   margin: 0;
-  padding-left: 10px;
-  margin-left: 2rem;
+  padding-left: 10px
 }
 
 a[href].toc-link {
@@ -200,9 +200,31 @@ a.toc-link:hover {
 /**
  *  Additional styles
  */
+.toc-container {
+  grid-row: 1;
+}
+
+.toc-content {  
+  grid-row: 2;
+}
+
 .post-main {
   display: grid;
-  grid-template-columns: 1fr 15em;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+
+@media (min-width: 1400px) {
+  .post-main {
+    grid-template-columns: 1fr 15em;
+  }
+  .toc-container {
+    grid-row: auto;
+  }
+
+  .toc-content {  
+    grid-row: auto;
+  }
 }
 
 /* https://raw.githubusercontent.com/alerque/libertinus/master/OFL.txt
@@ -390,7 +412,7 @@ html {
 
 :root, html[data-theme='sepia']{
 	--rem: 14pt;
-	--width: 65rem;
+	--width: 60rem;
 	--font-p: 1em/1.6 'Libertinus Serif', Times, serif;
 	--font-h: 1em/1.6 'Libertinus Sans', Helvetica, sans;
 	--font-c: 85%/1.4 monospace;
