@@ -198,9 +198,10 @@ module.exports = function (eleventyConfig) {
     breaks: true,
     linkify: true,
   }).use(markdownItAnchor, {
-    permalink: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: "#",
+    // permalink symbols look weird in TOC
+    permalink: false,
+    //permalinkClass: "direct-link",
+    //permalinkSymbol: "#",
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
 
