@@ -189,6 +189,10 @@ module.exports = function (eleventyConfig) {
   // But without this the JS build artefacts doesn't trigger a build.
   eleventyConfig.setUseGitIgnore(false);
 
+  // add support for table of contents
+  const pluginTOC = require('eleventy-plugin-nesting-toc');
+  eleventyConfig.addPlugin(pluginTOC);
+
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({
     html: true,
