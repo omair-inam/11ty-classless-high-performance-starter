@@ -191,7 +191,9 @@ module.exports = function (eleventyConfig) {
 
   // add support for table of contents
   const pluginTOC = require('eleventy-plugin-nesting-toc');
-  eleventyConfig.addPlugin(pluginTOC);
+  eleventyConfig.addPlugin(pluginTOC, {
+    wrapper: 'nav',
+  });
 
   /* Markdown Overrides */
   let markdownLibrary = markdownIt({

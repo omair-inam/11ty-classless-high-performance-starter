@@ -88,9 +88,7 @@
 
     <main>
       {% if tableOfContents %}
-      <summary>
         {{ content | toc | safe }}
-      </summary>
       {% endif %}
 
       {% if numberedHeadings %}
