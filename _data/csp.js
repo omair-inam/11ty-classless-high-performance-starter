@@ -37,7 +37,9 @@ const CSP = {
     ["object-src", quote("none")],
     // Script from same-origin and inline-hashes.
     // If you need to add an external host for scripts you need to add an item like 'https://code.jquery.com/jquery-3.6.0.slim.min.js' to this list.
-    ["script-src", SELF, /* Replaced by apply-csp.js plugin */ "HASHES"],
+    ["script-src", SELF, "https://netlify-cdp-loader.netlify.app/netlify.js", /* Replaced by apply-csp.js plugin */ "HASHES"],
+    // Update frame-src to allow Netlify
+    ["frame-src", SELF, 'https://app.netlify.com/'],
     // Inline CSS is allowed.
     ["style-src", quote("unsafe-inline")],
     // Images may also come from data-URIs.
