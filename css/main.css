@@ -306,7 +306,7 @@ html {
 
 :root, html[data-theme='sepia']{
 	--rem: 14pt;
-	--width: 48rem;
+	--width: 60rem;
 	--font-p: 1em/1.6 'Libertinus Serif', Times, serif;
 	--font-h: 1em/1.6 'Libertinus Sans', Helvetica, sans;
 	--font-c: 85%/1.4 monospace;
@@ -669,6 +669,81 @@ p>select { padding: 0;      margin: 0 .5em; }
 	h2, h3, h4, h5 { page-break-after: avoid;}
 	.noprint, body>nav, section:after { display: none; }
 	.row { flex-direction: row; }
+}
+
+/*
+ * TOC-related classes
+ * 
+ */
+nav.toc {
+  overflow-y: auto;
+  /* sticky toc using CSS Grid */
+  position: sticky;
+  top: 4rem;
+  align-self: start;
+  background-color: var(--cbg);
+}
+
+nav.toc>ol {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding-left: 10px
+}
+
+main.post-main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+
+nav.toc {
+  grid-row: auto;
+}
+
+main.post-main > article {  
+  grid-row: auto;
+  margin-top: 0px;
+}
+
+@media (min-width: 1024px) {
+  main.post-main {
+    grid-template-columns: 1fr 15em;
+    grid-row: 1;
+  }
+  nav.toc {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  main.post-main > article {  
+    grid-column: 1;
+  }
+}
+
+nav.toc>ol li {
+  list-style: none
+}
+
+nav.toc>ol li a[href] {
+  color: currentColor;
+  height: 100%;
+  text-decoration: none;
+}
+
+nav.toc>ol li a:hover {
+  filter: none;
+}
+
+nav.toc>ol li a::before {
+  background-color: #EEE;
+  content: ' ';
+  display: inline-block;
+  height: inherit;
+  left: 0;
+  margin-top: -1px;
+  position: absolute;
+  width: 2px
 }
 
 /*
