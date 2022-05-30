@@ -681,8 +681,6 @@ html {
 
 nav.toc {
   overflow-y: auto;
-  /* sticky toc using CSS Grid */
-  position: sticky;
   top: 4rem;
   align-self: start;
   background-color: var(--cbg);
@@ -719,6 +717,8 @@ main.post-main > article {
     grid-row: 1;
   }
   nav.toc {
+    /* sticky toc using CSS Grid */
+    position: sticky;
     grid-column: 2;
     grid-row: 1;
   }
