@@ -274,3 +274,22 @@ for (let img of document.querySelectorAll("img")) {
     removeBlurredImage(img);
   }
 }
+window.addEventListener('load', () => {
+  console.log("DOMContentLoaded begin");
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      console.log('Entry: ' + entry);
+      const id = entry.target.getAttribute('id');
+      console.log('id: ' + id);
+      if (entry.intersectionRatio > 0) {
+        document.querySelector(`nav.toc li a[href="#${id}"]`).classList.add('active');
+      } else {
+        document.querySelector(`nav.toc li a[href="#${id}"]`).classList.remove('active');
+      }
+    });
+  });
+  // Track all sections that have an `id` applied
+  var allHeaders = document.querySelectorAll('h2[id], h3[id], h4[id]').forEach((section) => {
+    observer.observe(section);
+  });
+});

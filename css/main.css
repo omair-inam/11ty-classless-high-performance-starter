@@ -691,6 +691,9 @@ nav.toc {
 nav.toc>ol {
   overflow: hidden;
   position: relative;
+}
+
+nav.toc ol {
   margin: 0;
   padding-left: 10px
 }
@@ -725,21 +728,23 @@ main.post-main > article {
   }
 }
 
-nav.toc>ol li {
-  list-style: none
+nav.toc ol li {
+  list-style: none;
+  margin-bottom: 0px;
 }
 
-nav.toc>ol li a[href] {
+nav.toc ol li a[href] {
   color: currentColor;
   height: 100%;
   text-decoration: none;
 }
 
-nav.toc>ol li a:hover {
+/*! purgecss start ignore */
+nav.toc ol li a:hover {
   filter: none;
 }
 
-nav.toc>ol li a::before {
+nav.toc ol li a::before {
   background-color: #EEE;
   content: ' ';
   display: inline-block;
@@ -749,6 +754,15 @@ nav.toc>ol li a::before {
   position: absolute;
   width: 2px
 }
+
+nav.toc ol li a.active {
+  font-weight: 700
+}
+
+nav.toc ol li a.active::before {
+  background-color: var(--cemph);
+}
+/*! purgecss end ignore */
 
 /*
 
