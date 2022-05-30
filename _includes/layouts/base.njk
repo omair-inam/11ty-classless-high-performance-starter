@@ -86,7 +86,11 @@
       {% endif %}
     </header>
 
-    <main>
+    <main class="{{ mainClass }}">
+      {% if tableOfContents %}
+        {{ content | toc | safe }}
+      {% endif %}
+
       {% if numberedHeadings %}
       <article>
       {% endif %}
