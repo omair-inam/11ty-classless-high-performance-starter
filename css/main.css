@@ -675,6 +675,10 @@ p>select { padding: 0;      margin: 0 .5em; }
  * TOC-related classes
  * 
  */
+html {
+  scroll-behavior: smooth;
+}
+
 nav.toc {
   overflow-y: auto;
   /* sticky toc using CSS Grid */
