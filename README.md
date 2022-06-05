@@ -51,7 +51,6 @@ npm run build
 ```css
 :root {
   --primary: #e7bf60;
-  --primary-dark: #f9c412;
 }
 ```
 
