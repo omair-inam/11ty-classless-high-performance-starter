@@ -677,33 +677,6 @@ nav.toc ol li a.active::before {
 SPDX-License-Identifier: MIT
 Copyright (c) 2018 Hakan Alpay
 */
-/*
-pre {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-body,
-ol,
-p,
-pre,
-ul {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-ol,
-p,
-pre,
-ul {
-  margin-bottom: 1.36rem;
-}
-*/
-
 header nav {
   position: fixed;
   top: 0;
@@ -754,41 +727,3 @@ footer nav,
 footer p {
   font-size: 90%;
 }
-/*
-code[class*="language-"],
-pre[class*="language-"] {
-  color: #ccc;
-  background: none;
-  font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 1.5;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-}
-code[class*="language-"] {
-  padding: 0;
-}
-pre[class*="language-"] {
-  padding: 1em;
-  margin: 0.5em 0;
-  overflow: auto;
-}
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-  background: #2d2d2d;
-}
-:not(pre) > code[class*="language-"] {
-  padding: 0.1em;
-  border-radius: 0.3em;
-  white-space: normal;
-}
-*/
