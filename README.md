@@ -50,7 +50,7 @@ npm run build
 
 ```css
 :root {
-  --primary: #e7bf60;
+  --reading-progress: #e7bf60;
 }
 ```
 

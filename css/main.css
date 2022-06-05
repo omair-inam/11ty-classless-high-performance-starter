@@ -1,9 +1,3 @@
-/* Color customization */
-:root {
-  --primary: #F1D7BB; 
-  --share-button: #E3AF78;
-}
-
 .test-dead-code-elimination-sentinel {
   color: red;
 }
@@ -105,7 +99,7 @@ header aside {
 
 #reading-progress {
   z-index: 1;
-  background-color: var(--primary);
+  background-color: var(--reading-progress);
   width: 100vw;
   position: absolute;
   left: 0;
@@ -227,6 +221,11 @@ html {
 	--cemph: #a35403; --cemphbg:  #a3540310;
 }
 
+/* Color customization */
+:root {
+  --reading-progress: #F1D7BB; 
+  --share-button: #E3AF78;
+}
 
 /* 2. Reset –––––––––––––––––––––––––––––––––––––––––––– */
 
