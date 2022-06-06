@@ -152,8 +152,8 @@ html {
 
   /* --cmed */
   --reading-progress: #d1d1d1; 
-  /* 6 shades lighter than --clink */
-  --share-button: #47B3FF;
+  /* --cmed */
+  --share-button: #d1d1d1;
 }
 
 html[data-theme='dark'] {
@@ -211,6 +211,10 @@ a[href]{ text-decoration: underline solid var(--cmed); text-underline-position: 
 a[href^="#"] {text-decoration: none; }
 a:hover, button:not([disabled]):hover, summary:hover {
 	filter: brightness(92%); color: var(--cemph); border-color: var(--cemph);
+}
+
+share-widget button:not([disabled]):hover {
+  color: var(--share-button); border-color: var(--share-button);
 }
 
 /* lists */
