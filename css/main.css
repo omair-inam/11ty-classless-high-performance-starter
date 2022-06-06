@@ -148,6 +148,7 @@ html {
 	--cmed:  #d1d1d1;
 	--clink: #07c;
 	--cemph: #088;    --cemphbg: #0881;
+  --hlink: #181818;
 
   /* --cmed */
   --reading-progress: #d1d1d1; 
@@ -162,6 +163,7 @@ html[data-theme='dark'] {
 	--cmed:  #566;
 	--clink: #1ad;
 	--cemph: #0b9;    --cemphbg: #0b91;
+  --hlink: #181818;
 }
 
 html[data-theme='dark'] #darkModeToggleLink:after{
@@ -638,9 +640,16 @@ header nav h1 {
   margin: 0;
   text-align: left;
 }
-header nav a {
-  font-weight: 500;
+header nav a,
+header nav a[href] {
+  font-weight: 700;
   margin-left: 1.5em;
+  color: var(--hlink);
+  text-decoration: none;
+}
+header nav a:hover {
+  color: var(--hlink);
+  text-decoration: underline solid var(--hlink);
 }
 header nav a:first-of-type {
   margin-left: auto;
