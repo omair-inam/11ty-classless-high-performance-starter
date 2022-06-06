@@ -586,6 +586,12 @@ main.post-main > article {
   margin-top: 0px;
 }
 
+@media (max-width: 1023px) {
+  nav.toc ol {
+    line-height: 3;
+  }  
+}
+
 @media (min-width: 1024px) {
   main.post-main {
     grid-template-columns: 1fr 15em;
