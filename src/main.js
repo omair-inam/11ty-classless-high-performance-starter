@@ -259,6 +259,23 @@ function removeBlurredImage(img) {
   // Ensure the browser doesn't try to draw the placeholder when the real image is present.
   img.style.backgroundImage = "none";
 }
+
+function toggleDarkMode(el){
+  var currentTheme= document.documentElement.getAttribute('data-theme');
+  var newTheme;
+  if (currentTheme === 'light'){
+    newTheme = 'dark';
+  } else {
+    newTheme = 'light';
+  }
+  localStorage.setItem('theme', newTheme);
+  document.documentElement.setAttribute('data-theme', newTheme);
+}
+
+document.getElementById('darkModeToggle').addEventListener("click", function(event) {
+  toggleDarkMode(this);
+});
+
 document.body.addEventListener(
   "load",
   (e) => {
@@ -275,7 +292,6 @@ for (let img of document.querySelectorAll("img")) {
   }
 }
 window.addEventListener('load', () => {
-  console.log("DOMContentLoaded begin");
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       console.log('Entry: ' + entry);

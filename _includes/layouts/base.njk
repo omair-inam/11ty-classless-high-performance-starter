@@ -6,6 +6,7 @@
     {% endif %}
   >
   <head>
+    <script src="{{ "/js/pre.min.js" | addHash }}"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% if isdevelopment %}
@@ -63,6 +64,9 @@
           {%- for entry in collections.all | eleventyNavigation %}
             <a href="{{ entry.url | url }}">{{ entry.title }}</a>
           {%- endfor %}
+          <span id="darkModeToggle">
+             <span id="darkModeToggleInnerSpan"></span>
+          </span>
         </div>
         <div id="reading-progress" aria-hidden="true"></div>
       </nav>

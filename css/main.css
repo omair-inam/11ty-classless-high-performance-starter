@@ -133,27 +133,7 @@ html {
 :root, html {
   --width: 60rem;
 }
-
-html[data-theme='dark'] {
-	/* foreground   | background color */
-	--cfg:   #cecbc4; --cbg:    #252220;
-	--cdark: #999;    --clight: #333;
-	--cmed:  #566;
-	--clink: #1ad;
-	--cemph: #0b9;    --cemphbg: #0b91;
-}
-
-@media (prefers-color-scheme: dark) {
-	html[data-theme='light'] {
-		/* foreground   | background color */
-		--cfg:   #cecbc4; --cbg:    #252220;
-		--cdark: #999;    --clight: #333;
-		--cmed:  #566;
-		--clink: #1ad;
-		--cemph: #0b9;    --cemphbg: #0b91;
-	}	
-}
-
+/*! purgecss start ignore */
 :root, html[data-theme='light'] {
 	--rem: 12pt;
 	--navpos: absolute;  /* fixed | absolute */
@@ -168,13 +148,50 @@ html[data-theme='dark'] {
 	--cmed:  #d1d1d1;
 	--clink: #07c;
 	--cemph: #088;    --cemphbg: #0881;
+  --hlink: #433;
 
   /* --cmed */
   --reading-progress: #d1d1d1; 
-  /* 6 shades lighter than --clink */
-  --share-button: #47B3FF;
+  /* --cmed */
+  --share-button: #d1d1d1;
 }
 
+html[data-theme='dark'] {
+	/* foreground   | background color */
+	--cfg:   #cecbc4; --cbg:    #252220;
+	--cdark: #999;    --clight: #333;
+	--cmed:  #566;
+	--clink: #1ad;
+	--cemph: #0b9;    --cemphbg: #0b91;
+  --hlink: #181818;
+}
+
+#darkModeToggle {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#darkModeToggle:hover {
+  cursor: pointer;
+}
+
+#darkModeToggleInnerSpan {
+  margin-right: 1.5em;
+}
+
+html[data-theme='dark'] #darkModeToggle {
+  background-image: url("/img/sun-solid.svg");
+}
+
+html[data-theme='light'] #darkModeToggle {
+  background-image: url("/img/moon-solid.svg");
+  /* Approximates --cfg (= #433) */
+  filter: invert(21%) sepia(4%) saturate(2514%) hue-rotate(319deg) brightness(88%) contrast(91%);
+}
+
+/*! purgecss end ignore */
 /* 2. Reset –––––––––––––––––––––––––––––––––––––––––––– */
 
 /* reset block elements  */
@@ -211,6 +228,10 @@ a[href]{ text-decoration: underline solid var(--cmed); text-underline-position: 
 a[href^="#"] {text-decoration: none; }
 a:hover, button:not([disabled]):hover, summary:hover {
 	filter: brightness(92%); color: var(--cemph); border-color: var(--cemph);
+}
+
+share-widget button:not([disabled]):hover {
+  color: var(--share-button); border-color: var(--share-button);
 }
 
 /* lists */
@@ -640,9 +661,16 @@ header nav h1 {
   margin: 0;
   text-align: left;
 }
-header nav a {
-  font-weight: 500;
+header nav a,
+header nav a[href] {
+  font-weight: 700;
   margin-left: 1.5em;
+  color: var(--hlink);
+  text-decoration: none;
+}
+header nav a:hover {
+  color: var(--hlink);
+  text-decoration: underline solid var(--hlink);
 }
 header nav a:first-of-type {
   margin-left: auto;
