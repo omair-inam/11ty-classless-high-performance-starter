@@ -7,8 +7,5 @@
             theme = 'dark';
         }
     }
-    if (theme === 'light') {
-        document.getElementById('darkModeToggleLink').innerText = '☪';
-    }
     document.documentElement.setAttribute('data-theme', theme);    
 })();

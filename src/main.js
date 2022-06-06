@@ -261,15 +261,15 @@ function removeBlurredImage(img) {
 }
 
 function toggleDarkMode(el){
-  var theme='light';
-  if (el.innerText == '☪'){
-    el.innerText = '☀'; theme='dark';
+  var currentTheme= document.documentElement.getAttribute('data-theme');
+  var newTheme;
+  if (currentTheme === 'light'){
+    newTheme = 'dark';
   } else {
-    el.innerText = '☪';
+    newTheme = 'light';
   }
-  console.log("Updating theme to: " + theme);
-  localStorage.setItem('theme', theme);
-  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', newTheme);
+  document.documentElement.setAttribute('data-theme', newTheme);
 }
 
 document.getElementById('darkModeToggleLink').addEventListener("click", function(event) {
@@ -292,7 +292,6 @@ for (let img of document.querySelectorAll("img")) {
   }
 }
 window.addEventListener('load', () => {
-  console.log("DOMContentLoaded begin");
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       console.log('Entry: ' + entry);

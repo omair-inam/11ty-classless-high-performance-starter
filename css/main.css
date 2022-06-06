@@ -163,6 +163,15 @@ html[data-theme='dark'] {
 	--clink: #1ad;
 	--cemph: #0b9;    --cemphbg: #0b91;
 }
+
+html[data-theme='dark'] #darkModeToggleLink:after{
+  content:'☀';
+}
+
+html[data-theme='light'] #darkModeToggleLink:after{
+  content:'☪';
+}
+
 /*! purgecss end ignore */
 /* 2. Reset –––––––––––––––––––––––––––––––––––––––––––– */
 
