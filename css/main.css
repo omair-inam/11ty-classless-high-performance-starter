@@ -166,12 +166,23 @@ html[data-theme='dark'] {
   --hlink: #181818;
 }
 
-html[data-theme='dark'] #darkModeToggleLink:after{
-  content:'☀';
+#darkModeToggle {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-html[data-theme='light'] #darkModeToggleLink:after{
-  content:'☪';
+#darkModeToggle:hover {
+  cursor: pointer;
+}
+
+html[data-theme='dark'] #darkModeToggle {
+  background-image: url("/img/sun-solid.svg");
+}
+
+html[data-theme='light'] #darkModeToggle {
+  background-image: url("/img/moon-solid.svg");
 }
 
 /*! purgecss end ignore */

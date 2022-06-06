@@ -272,7 +272,7 @@ function toggleDarkMode(el){
   document.documentElement.setAttribute('data-theme', newTheme);
 }
 
-document.getElementById('darkModeToggleLink').addEventListener("click", function(event) {
+document.getElementById('darkModeToggle').addEventListener("click", function(event) {
   toggleDarkMode(this);
 });
 
