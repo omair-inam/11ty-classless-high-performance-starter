@@ -177,6 +177,10 @@ html[data-theme='dark'] {
   cursor: pointer;
 }
 
+#darkModeToggleInnerSpan {
+  margin-right: 1.5em;
+}
+
 html[data-theme='dark'] #darkModeToggle {
   background-image: url("/img/sun-solid.svg");
 }
