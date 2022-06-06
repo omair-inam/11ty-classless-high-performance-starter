@@ -259,6 +259,23 @@ function removeBlurredImage(img) {
   // Ensure the browser doesn't try to draw the placeholder when the real image is present.
   img.style.backgroundImage = "none";
 }
+
+function toggleDarkMode(el){
+  var theme='light';
+  if (el.innerText == '☪'){
+    el.innerText = '☀'; theme='dark';
+  } else {
+    el.innerText = '☪';
+  }
+  console.log("Updating theme to: " + theme);
+  localStorage.setItem('theme', theme);
+  document.documentElement.setAttribute('data-theme', theme);
+}
+
+document.getElementById('darkModeToggleLink').addEventListener("click", function(event) {
+  toggleDarkMode(this);
+});
+
 document.body.addEventListener(
   "load",
   (e) => {
