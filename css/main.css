@@ -1,10 +1,3 @@
-/* Color customization */
-:root {
-  --primary: #F1D7BB; 
-  --primary-dark: #e7bf60;
-  --share-button: #E3AF78;
-}
-
 .test-dead-code-elimination-sentinel {
   color: red;
 }
@@ -106,7 +99,7 @@ header aside {
 
 #reading-progress {
   z-index: 1;
-  background-color: var(--primary);
+  background-color: var(--reading-progress);
   width: 100vw;
   position: absolute;
   left: 0;
@@ -119,81 +112,6 @@ header aside {
 
 #posts li {
   margin-bottom: 0.5em;
-}
-
-/* https://raw.githubusercontent.com/alerque/libertinus/master/OFL.txt
-Copyright © 2012-2021 The Libertinus Project Authors,
-SPDX-License-Identifier: OFL-1.1
-*/
-/* --------------------------------------------------------------------------
-Single variable font.
-
-Note that you may want to do something like this to make sure you're serving
-constant fonts to older browsers:
-html {
-  font-family: 'Libertinus Serif', Times, serif;
-}
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: 'Libertinus Serif var', sans-serif;
-  }
-}
-*/
-
-@font-face {
-    font-family: "Libertinus Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local('Libertinus Sans'), url("/fonts/LibertinusSans-Regular.woff2") format("woff2");
-}
-@font-face {
-    font-family: "Libertinus Sans";
-    font-style: italic;
-    font-weight: 400;
-    src: local('Libertinus Sans'), url("/fonts/LibertinusSans-Italic.woff2") format("woff2");
-}
-@font-face {
-    font-family: "Libertinus Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: local('Libertinus Sans'), url("/fonts/LibertinusSans-Bold.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: 'Libertinus Serif';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Libertinus Serif'), url("/fonts/LibertinusSerif-Regular.woff2") format("woff2");
-}
-@font-face {
-  font-family: 'Libertinus Serif';
-  font-style: italic;
-  font-weight: 400;
-  src: local('Libertinus Serif'), url("/fonts/LibertinusSerif-Italic.woff2") format("woff2");
-}
-@font-face {
-  font-family: 'Libertinus Serif';
-  font-style: normal;
-  font-weight: 600;
-  src: local('Libertinus Serif'), url("/fonts/LibertinusSerif-Semibold.woff2") format("woff2");
-}
-@font-face {
-  font-family: 'Libertinus Serif';
-  font-style: italic;
-  font-weight: 600;
-  src: local('Libertinus Serif'), url("/fonts/LibertinusSerif-SemiboldItalic.woff2") format("woff2");
-}
-@font-face {
-  font-family: 'Libertinus Serif';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Libertinus Serif'), url("/fonts/LibertinusSerif-Bold.woff2") format("woff2");
-}
-@font-face {
-  font-family: 'Libertinus Serif';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Libertinus Serif'), url("/fonts/LibertinusSerif-BoldItalic.woff2") format("woff2");
 }
 
 /* Classless.css v1.0
@@ -209,25 +127,53 @@ Table of Contents:
 /* 1. Theme Settings ––––––––––––––––––––-–––––––––––––– */
 
 html {
-  font-family: Libertinus Serif, Libertinus Sans, Helvetica; 
+  font-family: 'Open Sans', 'DejaVu Sans', FreeSans, Helvetica, sans-serif; 
 }
 
-:root, html[data-theme='sepia']{
-	--rem: 14pt;
-	--width: 60rem;
-	--font-p: 1em/1.6 'Libertinus Serif', Times, serif;
-	--font-h: 1em/1.6 'Libertinus Sans', Helvetica, sans;
-	--font-c: 85%/1.4 monospace;
-	--ornament: "∞ ∞ ∞"; 
-	/*--ornament: "❦ ❦ ❦"; "☙ ❧";*/
+:root, html {
+  --width: 60rem;
+}
+
+html[data-theme='dark'] {
 	/* foreground   | background color */
-	--cfg:    #433;   --cbg: #fefbf4;
-	--cdark: #6c605c; --clight: #f3efea;
-	--cmed: #a8928e;
-	--clink: #bd0000;
-	--cemph: #a35403; --cemphbg:  #a3540310;
+	--cfg:   #cecbc4; --cbg:    #252220;
+	--cdark: #999;    --clight: #333;
+	--cmed:  #566;
+	--clink: #1ad;
+	--cemph: #0b9;    --cemphbg: #0b91;
 }
 
+@media (prefers-color-scheme: dark) {
+	html[data-theme='light'] {
+		/* foreground   | background color */
+		--cfg:   #cecbc4; --cbg:    #252220;
+		--cdark: #999;    --clight: #333;
+		--cmed:  #566;
+		--clink: #1ad;
+		--cemph: #0b9;    --cemphbg: #0b91;
+	}	
+}
+
+:root, html[data-theme='light'] {
+	--rem: 12pt;
+	--navpos: absolute;  /* fixed | absolute */
+	--font-p: 1em/1.7  'Open Sans', 'DejaVu Sans', FreeSans, Helvetica, sans-serif;
+	--font-h: .9em/1.5 'Open Sans', 'DejaVu Sans', FreeSans, Helvetica, sans-serif;
+	--font-c: .9em/1.4 'DejaVu Sans Mono', monospace;
+	--border: 1px solid var(--cmed);
+	--ornament: "‹‹‹ ›››";
+	/* foreground   | background color */
+	--cfg:   #433;    --cbg:    #fff;
+	--cdark: #888;    --clight: #f5f6f7;
+	--cmed:  #d1d1d1;
+	--clink: #07c;
+	--cemph: #088;    --cemphbg: #0881;
+
+  /* --cmed */
+  --reading-progress: #d1d1d1; 
+  /* 6 shades lighter than --clink */
+  --share-button: #47B3FF;
+}
 
 /* 2. Reset –––––––––––––––––––––––––––––––––––––––––––– */
 

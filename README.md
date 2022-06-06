@@ -2,7 +2,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/819a3b7f-0529-4019-8276-f0928674578d/deploy-status)](https://app.netlify.com/sites/11ty-classless-high-performance-starter/deploys)
 
 A fork of [eleventy-high-performance-blog](https://github.com/google/eleventy-high-performance-blog) with a few small updates.
-* Theming: [Classless.css](https://classless.de/) with the Sepia theme.
+* Theming: [Classless.css](https://classless.de/) with the default theme.
 * TOC: Smooth scrolling and sticky (powered by [eleventy-plugin-nesting-toc](https://github.com/JordanShurmer/eleventy-plugin-nesting-toc)).
 
 ## Getting Started
@@ -50,8 +50,7 @@ npm run build
 
 ```css
 :root {
-  --primary: #e7bf60;
-  --primary-dark: #f9c412;
+  --reading-progress: #e7bf60;
 }
 ```
 
