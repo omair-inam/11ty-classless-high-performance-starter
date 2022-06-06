@@ -202,29 +202,52 @@ Table of Contents:
 /* 1. Theme Settings ––––––––––––––––––––-–––––––––––––– */
 
 html {
-  font-family: Libertinus Serif, Libertinus Sans, Helvetica; 
+  font-family: 'Open Sans', 'DejaVu Sans', FreeSans, Helvetica, sans-serif; 
 }
 
-:root, html[data-theme='sepia']{
-	--rem: 14pt;
-	--width: 60rem;
-	--font-p: 1em/1.6 'Libertinus Serif', Times, serif;
-	--font-h: 1em/1.6 'Libertinus Sans', Helvetica, sans;
-	--font-c: 85%/1.4 monospace;
-	--ornament: "∞ ∞ ∞"; 
-	/*--ornament: "❦ ❦ ❦"; "☙ ❧";*/
+:root, html {
+  --width: 60rem;
+}
+
+html[data-theme='dark'] {
 	/* foreground   | background color */
-	--cfg:    #433;   --cbg: #fefbf4;
-	--cdark: #6c605c; --clight: #f3efea;
-	--cmed: #a8928e;
-	--clink: #bd0000;
-	--cemph: #a35403; --cemphbg:  #a3540310;
+	--cfg:   #cecbc4; --cbg:    #252220;
+	--cdark: #999;    --clight: #333;
+	--cmed:  #566;
+	--clink: #1ad;
+	--cemph: #0b9;    --cemphbg: #0b91;
 }
 
-/* Color customization */
-:root {
-  --reading-progress: #F1D7BB; 
-  --share-button: #E3AF78;
+@media (prefers-color-scheme: dark) {
+	html[data-theme='light'] {
+		/* foreground   | background color */
+		--cfg:   #cecbc4; --cbg:    #252220;
+		--cdark: #999;    --clight: #333;
+		--cmed:  #566;
+		--clink: #1ad;
+		--cemph: #0b9;    --cemphbg: #0b91;
+	}	
+}
+
+:root, html[data-theme='light'] {
+	--rem: 12pt;
+	--navpos: absolute;  /* fixed | absolute */
+	--font-p: 1em/1.7  'Open Sans', 'DejaVu Sans', FreeSans, Helvetica, sans-serif;
+	--font-h: .9em/1.5 'Open Sans', 'DejaVu Sans', FreeSans, Helvetica, sans-serif;
+	--font-c: .9em/1.4 'DejaVu Sans Mono', monospace;
+	--border: 1px solid var(--cmed);
+	--ornament: "‹‹‹ ›››";
+	/* foreground   | background color */
+	--cfg:   #433;    --cbg:    #fff;
+	--cdark: #888;    --clight: #f5f6f7;
+	--cmed:  #d1d1d1;
+	--clink: #07c;
+	--cemph: #088;    --cemphbg: #0881;
+
+  /* --cmed */
+  --reading-progress: #d1d1d1; 
+  /* 6 shades lighter than --clink */
+  --share-button: #47B3FF;
 }
 
 /* 2. Reset –––––––––––––––––––––––––––––––––––––––––––– */
