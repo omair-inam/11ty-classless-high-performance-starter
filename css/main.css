@@ -571,7 +571,7 @@ nav.toc ol {
 
 main.post-main {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 50px;
 }
 
@@ -592,7 +592,7 @@ main.post-main > article {
 
 @media (min-width: 1024px) {
   main.post-main {
-    grid-template-columns: 1fr 15em;
+    grid-template-columns: minmax(0, 1fr) 15em;
     grid-row: 1;
   }
   nav.toc {
