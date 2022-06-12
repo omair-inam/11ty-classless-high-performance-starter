@@ -347,7 +347,7 @@ article h3:before {
 article h1 { counter-set: h2; }
 article h2:before { counter-increment: h2; content: counter(h2) ". "; counter-set: h3; }
 article h3:before { counter-increment: h3; content: counter(h2) "." counter(h3) ". ";}
-@media (max-width: 60rem) { h2:before, h3:before { display: none; } }
+@media (max-width: 60rem) { article h2:before, article h3:before { display: none; } }
 
 /* tooltip + citation */
 article p>cite:before {
