@@ -149,11 +149,9 @@ html {
 	--clink: #07c;
 	--cemph: #088;    --cemphbg: #0881;
   --hlink: #433;
-
-  /* --cmed */
-  --reading-progress: #d1d1d1; 
-  /* --cmed */
-  --share-button: #d1d1d1;
+  /** also update meta name=theme-color in base.njk */
+  --reading-progress: #00E0B7; 
+  --share-button: #00CCA7;
 }
 
 html[data-theme='dark'] {
