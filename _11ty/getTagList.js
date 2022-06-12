@@ -1,5 +1,5 @@
 module.exports = function(collection) {
-  let tagSet = new Set();
+  let tagCount = new Map();
   collection.getAll().forEach(function(item) {
     if( "tags" in item.data ) {
       let tags = item.data.tags;
@@ -18,11 +18,11 @@ module.exports = function(collection) {
       });
 
       for (const tag of tags) {
-        tagSet.add(tag);
+        if (tagCount.set(tag, (tagCount.get(tag) || 0) + 1));
       }
     }
   });
-
-  // returning an array in addCollection works in Eleventy 0.5.3
-  return [...tagSet];
+  
+  //console.log("Tagset counts: " + [...tagCount.entries()]);
+  return tagCount;
 };
