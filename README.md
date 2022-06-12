@@ -4,6 +4,10 @@
 A fork of [eleventy-high-performance-blog](https://github.com/google/eleventy-high-performance-blog) with a few small updates.
 * Theming: [Classless.css](https://classless.de/) with the default theme.
 * TOC: Smooth scrolling and sticky (powered by [eleventy-plugin-nesting-toc](https://github.com/JordanShurmer/eleventy-plugin-nesting-toc)).
+* Dark-mode toggle 
+
+And some small fixes:
+* Tags list fixed, and updated to include a posts count.
 
 ## Getting Started
 
