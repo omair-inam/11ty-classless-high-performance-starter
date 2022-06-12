@@ -588,6 +588,10 @@ main.post-main > article {
   nav.toc {
     display: none;
   }
+
+  body {
+    padding: 3rem 2rem 0;
+  }
 }
 
 @media (min-width: 1024px) {
