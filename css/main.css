@@ -151,9 +151,9 @@ html {
   --hlink: #433;
 
   /* --cmed */
-  --reading-progress: #d1d1d1; 
+  --reading-progress: #00E0B7; 
   /* --cmed */
-  --share-button: #d1d1d1;
+  --share-button: #00CCA7;
 }
 
 html[data-theme='dark'] {
