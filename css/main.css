@@ -347,7 +347,7 @@ article h3:before {
 article h1 { counter-set: h2; }
 article h2:before { counter-increment: h2; content: counter(h2) ". "; counter-set: h3; }
 article h3:before { counter-increment: h3; content: counter(h2) "." counter(h3) ". ";}
-@media (max-width: 60rem) { h2:before, h3:before { display: none; } }
+@media (max-width: 60rem) { article h2:before, article h3:before { display: none; } }
 
 /* tooltip + citation */
 article p>cite:before {
@@ -571,7 +571,7 @@ nav.toc ol {
 
 main.post-main {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: 50px;
 }
 
@@ -585,14 +585,18 @@ main.post-main > article {
 }
 
 @media (max-width: 1023px) {
-  nav.toc ol {
-    line-height: 3;
-  }  
+  nav.toc {
+    display: none;
+  }
+
+  body {
+    padding: 3rem 2rem 0;
+  }
 }
 
 @media (min-width: 1024px) {
   main.post-main {
-    grid-template-columns: 1fr 15em;
+    grid-template-columns: minmax(0, 1fr) 15em;
     grid-row: 1;
   }
   nav.toc {
