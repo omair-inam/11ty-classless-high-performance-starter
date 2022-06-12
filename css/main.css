@@ -585,9 +585,9 @@ main.post-main > article {
 }
 
 @media (max-width: 1023px) {
-  nav.toc ol {
-    line-height: 3;
-  }  
+  nav.toc {
+    display: none;
+  }
 }
 
 @media (min-width: 1024px) {
