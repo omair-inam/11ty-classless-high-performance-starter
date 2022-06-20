@@ -115,6 +115,34 @@ header aside {
   margin-bottom: 0.5em;
 }
 
+/* 
+SPDX-License-Identifier: OFL-1.1
+Copyright (c) 2016-2020 The Inter Project Authors.
+"Inter" is trademark of Rasmus Andersson.
+https://github.com/rsms/inter
+*/
+/* --------------------------------------------------------------------------
+Single variable font.
+
+Note that you may want to do something like this to make sure you're serving
+constant fonts to older browsers:
+html {
+  font-family: 'Inter UI', sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter UI var', sans-serif;
+  }
+}
+*/
+
+@font-face {
+  font-family: "Inter UI";
+  font-weight: 100 900;
+  font-style: oblique 0deg 10deg;
+  src: url("/fonts/Inter-3.19.var.woff2") format("woff2");
+}
+
 /* Classless.css v1.0
 
 Table of Contents:
@@ -128,7 +156,7 @@ Table of Contents:
 /* 1. Theme Settings ––––––––––––––––––––-–––––––––––––– */
 
 html {
-  font-family: 'Open Sans', 'DejaVu Sans', FreeSans, Helvetica, sans-serif; 
+  font-family: Inter UI, sans-serif; 
 }
 
 :root, html {
@@ -138,8 +166,8 @@ html {
 :root, html[data-theme='light'] {
 	--rem: 12pt;
 	--navpos: absolute;  /* fixed | absolute */
-	--font-p: 1em/1.7  'Open Sans', 'DejaVu Sans', FreeSans, Helvetica, sans-serif;
-	--font-h: .9em/1.5 'Open Sans', 'DejaVu Sans', FreeSans, Helvetica, sans-serif;
+	--font-p: 1em/1.7  Inter UI, sans-serif;
+	--font-h: .9em/1.5 Inter UI, sans-serif;
 	--font-c: .9em/1.4 'DejaVu Sans Mono', monospace;
 	--border: 1px solid var(--cmed);
 	--ornament: "‹‹‹ ›››";
