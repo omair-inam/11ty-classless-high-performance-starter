@@ -1,7 +1,7 @@
 [build]
   publish = "_site"
   # Allows overriding metadata.json via env var
-  command = "[ \"$METADATA_JSON\" ] && echo $METADATA_JSON > _data/metadata.json; npm run build-ci"
+  command = "[ \"$METADATA_JSON\" ] && echo $METADATA_JSON > _data/metadata.json; yarn run build-ci"
   functions = "functions/"
 
 [[plugins]]
@@ -12,3 +12,9 @@
     [headers.values]
       Content-Type = "image/avif"
       Content-Disposition = "inline"
+
+[context.production]
+  environment = { NODE_VERSION = "18" }
+
+[context.deploy-preview]
+  environment = { NODE_VERSION = "18" }
