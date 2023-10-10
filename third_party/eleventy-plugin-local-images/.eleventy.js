@@ -3,7 +3,7 @@ const path = require("path");
 const { JSDOM } = require("jsdom");
 const fetch = require("node-fetch");
 const sh = require("shorthash");
-const fileType = require("file-type");
+const fileType = import("file-type");
 const metadata = require("../../_data/metadata.json");
 
 let config = { distPath: "_site", verbose: false, attribute: "src" };
@@ -29,7 +29,7 @@ const downloadImage = async (path) => {
   }
 };
 
-const getFileType = (filename, buffer) => {
+const getFileType = async (filename, buffer) => {
   // infer the file ext from the buffer
   const type = fileType(buffer);
 
