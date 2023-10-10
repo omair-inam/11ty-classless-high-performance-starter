@@ -10,7 +10,7 @@ This plugin is a post-processor that looks for image paths within your generated
 
 From your project directory run:
 ```
-npm install eleventy-plugin-local-images --save-dev
+yarn add eleventy-plugin-local-images --save-dev
 ```
 Once the package has installed, open up your `.eleventy.js` file.
 

@@ -30,19 +30,19 @@ cd my-blog-name
 ### 4. Install dependencies
 
 ```
-npm install
+yarn install
 ```
 
 ### 5. Build, serve, watch and test
 
 ```
-npm run watch
+yarn run watch
 ```
 
 ### 6. Build and test
 
 ```
-npm run build
+yarn run build
 ```
 
 ## Customize
