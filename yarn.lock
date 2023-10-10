@@ -2129,13 +2129,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"datauri@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "datauri@npm:3.0.0"
+"datauri@npm:^4.1.0":
+  version: 4.1.0
+  resolution: "datauri@npm:4.1.0"
   dependencies:
-    image-size: 0.8.3
-    mimer: 1.1.0
-  checksum: a18cc9c4c0f31399749f5ad0a89c6fabb6e956754fb7ac2569f1b8e493f42841aafdb95046b82f2f1e7aadba2536b478b708c7632e32ca00de3678eca63c13c9
+    image-size: 1.0.0
+    mimer: ^2.0.2
+  checksum: 891c28a75284222f9416407c6bb4a9a7ffe29950509c6d4863984687f4a11066a838712a4ee8810e3eea390d32feb2aca50dcda1bd6f45dfa2f4420654a12b24
   languageName: node
   linkType: hard
 
@@ -2480,7 +2480,7 @@ __metadata:
     concurrently: ^7.0.0
     csp-hash-generator: 0.0.3
     csso: ^4.0.3
-    datauri: ^3.0.0
+    datauri: ^4.1.0
     eleventy-plugin-local-images: ^0.4.0
     eleventy-plugin-nesting-toc: ^1.3.0
     expect.js: ^0.3.1
@@ -2489,7 +2489,7 @@ __metadata:
     fs-extra: ^8.1.0
     hasha: ^5.2.0
     html-minifier: ^4.0.0
-    image-size: ^0.8.3
+    image-size: ^1.0.2
     jimp: ^0.22.10
     jsdom: ^22.1.0
     lru-cache: ^10.0.1
@@ -3553,14 +3553,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"image-size@npm:0.8.3, image-size@npm:^0.8.3":
-  version: 0.8.3
-  resolution: "image-size@npm:0.8.3"
+"image-size@npm:1.0.0":
+  version: 1.0.0
+  resolution: "image-size@npm:1.0.0"
   dependencies:
-    queue: 6.0.1
+    queue: 6.0.2
   bin:
     image-size: bin/image-size.js
-  checksum: e118dc6a738b26e9e9c17bf947205a93a734971970f0a8d1827faa019f414d20af088c1f3c92105c4ec4f596fbc105e1e33217881cb6791a5cc505183f2fac15
+  checksum: 2d9d1edc43c0fa8effd27c44cd2d1b02ecc963219e78a76ac80b9d363f69c5aa19990cc23a323959ea510742ff07667e231f0852fd57eba5dc5b55432b58106d
+  languageName: node
+  linkType: hard
+
+"image-size@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "image-size@npm:1.0.2"
+  dependencies:
+    queue: 6.0.2
+  bin:
+    image-size: bin/image-size.js
+  checksum: 01745fdb47f87cecf538e69c63f9adc5bfab30a345345c2de91105f3afbd1bfcfba1256af02bf3323077b33b0004469a837e077bf0cbb9c907e9c1e9e7547585
   languageName: node
   linkType: hard
 
@@ -4402,12 +4413,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"mimer@npm:1.1.0":
-  version: 1.1.0
-  resolution: "mimer@npm:1.1.0"
+"mimer@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "mimer@npm:2.0.2"
   bin:
-    mimer: ./bin/mimer
-  checksum: 186a3cf8a226a31b1b85c98e188be424a5f666a34cc5e3dbe6ff0e3d964f8f8353e5ac6d9dab380e93820a00e93dd722f55128a627662732f437453847feab45
+    mimer: bin/mimer
+  checksum: 7c9d9a9016c62bacbe486708fe7ed19e3db307bc94fbe0eeeb782028c4417f772306ccb3810013904c871d3b88f83c9fae2e03190f2f5daaee0e0fc148d2434e
   languageName: node
   linkType: hard
 
@@ -5647,12 +5658,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"queue@npm:6.0.1":
-  version: 6.0.1
-  resolution: "queue@npm:6.0.1"
+"queue@npm:6.0.2":
+  version: 6.0.2
+  resolution: "queue@npm:6.0.2"
   dependencies:
     inherits: ~2.0.3
-  checksum: f39f70b030f9aebf4b32b0db5b7b11d2b799cdaedb190849532983fb31ba45a94d2ee48308e545e8452826b29a4ac996946579af7b42072f04ded3ce40c41703
+  checksum: ebc23639248e4fe40a789f713c20548e513e053b3dc4924b6cb0ad741e3f264dcff948225c8737834dd4f9ec286dbc06a1a7c13858ea382d9379f4303bcc0916
   languageName: node
   linkType: hard
 
