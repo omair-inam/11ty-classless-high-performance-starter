@@ -2484,7 +2484,7 @@ __metadata:
     eleventy-plugin-local-images: ^0.4.0
     eleventy-plugin-nesting-toc: ^1.3.0
     expect.js: ^0.3.1
-    ffmpeg-static: ^4.4.0
+    ffmpeg-static: ^5.2.0
     file-type: ^18.5.0
     fs-extra: ^8.1.0
     hasha: ^5.2.0
@@ -2857,15 +2857,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ffmpeg-static@npm:^4.4.0":
-  version: 4.4.1
-  resolution: "ffmpeg-static@npm:4.4.1"
+"ffmpeg-static@npm:^5.2.0":
+  version: 5.2.0
+  resolution: "ffmpeg-static@npm:5.2.0"
   dependencies:
     "@derhuerst/http-basic": ^8.2.0
     env-paths: ^2.2.0
     https-proxy-agent: ^5.0.0
     progress: ^2.0.3
-  checksum: 24cc15a06d94a6fbbcabb13b3fae670667ba00d6692d7c1a66b80f6fbf79aaa7d968caa4244f9fc5a9f057fcaf816d1010fb3056f545c3963890f68ac2e57447
+  checksum: 35af3dd1d957cc23f895bff054c3d4e40bcd4c50626149fd0b7b0909c34b4c2b196d038dd2713c1bb11d2a5f132e9ec67511a32407e1a7f12e015ffa39b12aeb
   languageName: node
   linkType: hard
 
