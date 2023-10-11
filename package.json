@@ -39,7 +39,7 @@
     "luxon": "^3.3.0",
     "markdown-it": "^13.0.2",
     "markdown-it-anchor": "^8.6.7",
-    "node-fetch": "^2.6.7",
+    "node-fetch": "^3.3.2",
     "pre-commit": "^1.2.2",
     "pre-push": "^0.1.4",
     "shorthash": "0.0.2"
