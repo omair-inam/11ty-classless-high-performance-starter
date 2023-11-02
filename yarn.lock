@@ -2501,7 +2501,7 @@ __metadata:
     eleventy-plugin-nesting-toc: ^1.3.0
     expect.js: ^0.3.1
     ffmpeg-static: ^5.2.0
-    file-type: ^18.5.0
+    file-type: ^18.6.0
     fs-extra: ^11.1.1
     hasha: ^5.2.0
     html-minifier: ^4.0.0
@@ -2913,14 +2913,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"file-type@npm:^18.5.0":
-  version: 18.5.0
-  resolution: "file-type@npm:18.5.0"
+"file-type@npm:^18.6.0":
+  version: 18.6.0
+  resolution: "file-type@npm:18.6.0"
   dependencies:
     readable-web-to-node-stream: ^3.0.2
     strtok3: ^7.0.0
     token-types: ^5.0.1
-  checksum: d2bc81d842b110970a0ca9d90356ce4e9738c1c05596ce8931f2af334477856d92bcecd0742dc6646e13a970c0125150ad4415898688d1901d80e972d90ab1ca
+  checksum: 0a505569611147a286b14dfc6cc9be759a73b2b2a75c102ee1e00e8bd883d9081af428eda2319e2a94462fca919369b3b1c582e169605493c80471246232a2fb
   languageName: node
   linkType: hard
 
