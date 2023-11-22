@@ -2508,7 +2508,7 @@ __metadata:
     image-size: ^1.0.2
     jimp: ^0.22.10
     jsdom: ^22.1.0
-    lru-cache: ^10.0.2
+    lru-cache: ^10.0.3
     luxon: ^3.4.4
     markdown-it: ^13.0.2
     markdown-it-anchor: ^8.6.7
@@ -4318,12 +4318,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lru-cache@npm:^10.0.2":
-  version: 10.0.2
-  resolution: "lru-cache@npm:10.0.2"
-  dependencies:
-    semver: ^7.3.5
-  checksum: 83ad0e899d79f48574bdda131fe8157c6d65cbd073a6e78e0d1a3467a85dce1ef4d8dc9fd618a56c57a068271501c81d54471e13f84dd121e046b155ed061ed4
+"lru-cache@npm:^10.0.3":
+  version: 10.0.3
+  resolution: "lru-cache@npm:10.0.3"
+  checksum: e4b100c5a6b2ac778c0f63711499b5098686205c57907d8c04a413270d37089112d9bd0192dfa36940eb5d94b88c7db54fdb6fd23319c8f89903cfd4323ea06c
   languageName: node
   linkType: hard
 
