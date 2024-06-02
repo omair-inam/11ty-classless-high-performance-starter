@@ -2660,7 +2660,7 @@ __metadata:
     ffmpeg-static: ^5.2.0
     file-type: ^19.0.0
     fs-extra: ^11.2.0
-    hasha: ^5.2.0
+    hasha: ^6.0.0
     html-minifier: ^4.0.0
     image-size: ^1.1.1
     jimp: ^0.22.12
@@ -3504,13 +3504,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hasha@npm:^5.2.0":
-  version: 5.2.2
-  resolution: "hasha@npm:5.2.2"
+"hasha@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "hasha@npm:6.0.0"
   dependencies:
-    is-stream: ^2.0.0
-    type-fest: ^0.8.0
-  checksum: 06cc474bed246761ff61c19d629977eb5f53fa817be4313a255a64ae0f433e831a29e83acb6555e3f4592b348497596f1d1653751008dda4f21c9c21ca60ac5a
+    is-stream: ^3.0.0
+    type-fest: ^4.7.1
+  checksum: 368efcd2ef4170dbafe1f15f760155c3f4dac7d2397766e7b4b6b0f77b67cfee5554cab5dbbc4c210828752ebc9a4333ed72e44617f8a4b821333f11cdb66770
   languageName: node
   linkType: hard
 
@@ -3984,10 +3984,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-stream@npm:^2.0.0":
-  version: 2.0.1
-  resolution: "is-stream@npm:2.0.1"
-  checksum: b8e05ccdf96ac330ea83c12450304d4a591f9958c11fd17bed240af8d5ffe08aedafa4c0f4cfccd4d28dc9d4d129daca1023633d5c11601a6cbc77521f6fae66
+"is-stream@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "is-stream@npm:3.0.0"
+  checksum: 172093fe99119ffd07611ab6d1bcccfe8bc4aa80d864b15f43e63e54b7abc71e779acd69afdb854c4e2a67fdc16ae710e370eda40088d1cfc956a50ed82d8f16
   languageName: node
   linkType: hard
 
@@ -7063,10 +7063,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"type-fest@npm:^0.8.0":
-  version: 0.8.1
-  resolution: "type-fest@npm:0.8.1"
-  checksum: d61c4b2eba24009033ae4500d7d818a94fd6d1b481a8111612ee141400d5f1db46f199c014766b9fa9b31a6a7374d96fc748c6d688a78a3ce5a33123839becb7
+"type-fest@npm:^4.7.1":
+  version: 4.18.3
+  resolution: "type-fest@npm:4.18.3"
+  checksum: 85c258c8a64011a797366bfb442d6d36ec74318ec3ab7c3d65ec156beeac5bcfeae742e8d3bb1bc1df478885388850d1812b30fcee72c14512c74e193dc3bf71
   languageName: node
   linkType: hard
 
