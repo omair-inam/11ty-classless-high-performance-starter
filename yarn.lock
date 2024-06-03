@@ -1173,7 +1173,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"abbrev@npm:1, abbrev@npm:^1.0.0":
+"abbrev@npm:^1.0.0":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
   checksum: a4a97ec07d7ea112c517036882b2ac22f3109b7b19077dc656316d07d308438aac28e4d9746dc4d84bf6b1e75b4a7b0a5f3cb30592419f128ca9a8cee3bcfa17
@@ -2680,7 +2680,7 @@ __metadata:
     rollup: 4
     sharp: ^0.33.4
     shorthash: 0.0.2
-    touch: ^3.1.0
+    touch: ^3.1.1
     twitter: ^1.7.1
   languageName: unknown
   linkType: soft
@@ -5056,17 +5056,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nopt@npm:~1.0.10":
-  version: 1.0.10
-  resolution: "nopt@npm:1.0.10"
-  dependencies:
-    abbrev: 1
-  bin:
-    nopt: ./bin/nopt.js
-  checksum: f62575aceaa3be43f365bf37a596b89bbac2e796b001b6d2e2a85c2140a4e378ff919e2753ccba959c4fd344776fc88c29b393bc167fa939fb1513f126f4cd45
-  languageName: node
-  linkType: hard
-
 "normalize-html-whitespace@npm:1.0.0":
   version: 1.0.0
   resolution: "normalize-html-whitespace@npm:1.0.0"
@@ -7018,14 +7007,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"touch@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "touch@npm:3.1.0"
-  dependencies:
-    nopt: ~1.0.10
+"touch@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "touch@npm:3.1.1"
   bin:
-    nodetouch: ./bin/nodetouch.js
-  checksum: e0be589cb5b0e6dbfce6e7e077d4a0d5f0aba558ef769c6d9c33f635e00d73d5be49da6f8631db302ee073919d82b5b7f56da2987feb28765c95a7673af68647
+    nodetouch: bin/nodetouch.js
+  checksum: fb8c54207500eb760b6b9d77b9c5626cc027c9ad44431eed4268845f00f8c6bbfc95ce7e9da8e487f020aa921982a8bc5d8e909d0606e82686bd0a08a8e0539b
   languageName: node
   linkType: hard
 
