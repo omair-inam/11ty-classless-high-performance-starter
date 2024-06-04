@@ -2668,7 +2668,7 @@ __metadata:
     lru-cache: ^10.2.2
     luxon: ^3.4.4
     markdown-it: ^14.1.0
-    markdown-it-anchor: ^8.6.7
+    markdown-it-anchor: ^9.0.1
     mocha: ^10.3.0
     node-fetch: ^3.3.2
     phin: ^3.7.1
@@ -4468,7 +4468,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lru-cache@npm:^10.2.2":
+"lru-cache@npm:^10.2.0, lru-cache@npm:^10.2.2":
   version: 10.2.2
   resolution: "lru-cache@npm:10.2.2"
   checksum: 98e8fc93691c546f719a76103ef2bee5a3ac823955c755a47641ec41f8c7fafa1baeaba466937cc1cbfa9cfd47e03536d10e2db3158a64ad91ff3a58a32c893e
@@ -4536,13 +4536,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"markdown-it-anchor@npm:^8.6.7":
-  version: 8.6.7
-  resolution: "markdown-it-anchor@npm:8.6.7"
+"markdown-it-anchor@npm:^9.0.1":
+  version: 9.0.1
+  resolution: "markdown-it-anchor@npm:9.0.1"
   peerDependencies:
     "@types/markdown-it": "*"
     markdown-it: "*"
-  checksum: 828236768ac7f61ed5591393c1b1bfc5dbf2b6d0c58a3deec606c61dddaa12658a34450cbef37ab50a04453e618ce1efd47d86e4e52595024334898fd306225b
+  checksum: 4bb2d01e160c983155be1ac713a10ad019f1d0b8da23427ce963b5da587a15de215beff65c0b8e14c4435b2fa5a95393bd198cb0a641cbf20602c4e32b7a41fb
   languageName: node
   linkType: hard
 
