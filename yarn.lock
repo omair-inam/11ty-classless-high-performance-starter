@@ -126,24 +126,34 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ampproject/toolbox-core@npm:2.9.0":
-  version: 2.9.0
-  resolution: "@ampproject/toolbox-core@npm:2.9.0"
+"@ampproject/toolbox-core@npm:2.10.0":
+  version: 2.10.0
+  resolution: "@ampproject/toolbox-core@npm:2.10.0"
   dependencies:
     cross-fetch: 3.1.5
     lru-cache: 6.0.0
-  checksum: 81eef84e09961fd80ae01e05ab6cfc49518c161f63a2caa4ef01e0bc8b13f591c77752aab254d5a248a2e71e276848955e4d8cdb29c286f54f0d86d7cbec2be4
+  checksum: 03d7783cb425fc8cb91132a2b872e6cd3c06c9ed2da222e5c2c6433afe6094acd05a5e0b4269b000273fb76a667b513d64ba705d320a5fbec825dae956e2ea44
   languageName: node
   linkType: hard
 
-"@ampproject/toolbox-optimizer@npm:^2.9.0":
-  version: 2.9.0
-  resolution: "@ampproject/toolbox-optimizer@npm:2.9.0"
+"@ampproject/toolbox-core@npm:2.10.1":
+  version: 2.10.1
+  resolution: "@ampproject/toolbox-core@npm:2.10.1"
   dependencies:
-    "@ampproject/toolbox-core": 2.9.0
-    "@ampproject/toolbox-runtime-version": 2.9.0
-    "@ampproject/toolbox-script-csp": 2.9.0
-    "@ampproject/toolbox-validator-rules": 2.9.0
+    cross-fetch: 3.1.5
+    lru-cache: 6.0.0
+  checksum: 4dcbdcc39f1419ec27b8660d59c2bb9ce1586e88bd0c54861c0f104e45db1d2654f5777b88440f5224680bbff932f80f4c9e18532f65efad23aa660276d968ce
+  languageName: node
+  linkType: hard
+
+"@ampproject/toolbox-optimizer@npm:^2.10.1":
+  version: 2.10.1
+  resolution: "@ampproject/toolbox-optimizer@npm:2.10.1"
+  dependencies:
+    "@ampproject/toolbox-core": 2.10.1
+    "@ampproject/toolbox-runtime-version": 2.10.1
+    "@ampproject/toolbox-script-csp": 2.10.1
+    "@ampproject/toolbox-validator-rules": 2.10.1
     abort-controller: 3.0.0
     cross-fetch: 3.1.5
     cssnano-simple: 2.0.0
@@ -162,32 +172,32 @@ __metadata:
       optional: true
     probe-image-size:
       optional: true
-  checksum: 5177205c6a2250cef5912e490b19e29f263071db182ac8a3ffdd47d3610ad50c9c60113406dd8d3f389ccfeb5fda8d227bc4613afd1aa1f18aa292b223f8ff81
+  checksum: 485f91dd3436ef880c099fdb6b169e9ebdbd8e8157d88e1361cb5b12dd5b2af599298021fac674febb3cf898e80213decfd2641f6243d04293855c228a696efa
   languageName: node
   linkType: hard
 
-"@ampproject/toolbox-runtime-version@npm:2.9.0":
-  version: 2.9.0
-  resolution: "@ampproject/toolbox-runtime-version@npm:2.9.0"
+"@ampproject/toolbox-runtime-version@npm:2.10.1":
+  version: 2.10.1
+  resolution: "@ampproject/toolbox-runtime-version@npm:2.10.1"
   dependencies:
-    "@ampproject/toolbox-core": 2.9.0
-  checksum: 57d34b8f0270e7cde4966d2b8e93051f719eaf2d73765e255c9cae9c5783925511a231943142ab0f336ed1810bedfcfca132336a1693dfb645990d787500c710
+    "@ampproject/toolbox-core": 2.10.0
+  checksum: 69e370d06ef3cca082e2372e1d65f301b139c6ffbed4e68c748097297b6fc77b0c0de3358f6863ff26f805e5e47a5e8a2b6b08866a76578b9be21f27ccefbd99
   languageName: node
   linkType: hard
 
-"@ampproject/toolbox-script-csp@npm:2.9.0":
-  version: 2.9.0
-  resolution: "@ampproject/toolbox-script-csp@npm:2.9.0"
-  checksum: fe99bf48f25db8c1dddd28172565bbfc72d88514fd4aeebadcb2a7652aacc7289f7fa7795014dce7f245a856a623cb1d797668efec2a219dc619dc3d16d969b2
+"@ampproject/toolbox-script-csp@npm:2.10.1":
+  version: 2.10.1
+  resolution: "@ampproject/toolbox-script-csp@npm:2.10.1"
+  checksum: 57baac92dca8d4d0eec073170c17621e75babfd0bb95a48deb12aae6720098095810def4e1d67f5bf4bd0ae4c7ad8c545bd18507088ade424e117c8c87ccb637
   languageName: node
   linkType: hard
 
-"@ampproject/toolbox-validator-rules@npm:2.9.0":
-  version: 2.9.0
-  resolution: "@ampproject/toolbox-validator-rules@npm:2.9.0"
+"@ampproject/toolbox-validator-rules@npm:2.10.1":
+  version: 2.10.1
+  resolution: "@ampproject/toolbox-validator-rules@npm:2.10.1"
   dependencies:
     cross-fetch: 3.1.5
-  checksum: 2f513e8b503786c727f181740eace87da42c5b9238237a90db5fe20fa4dc0cc5aec8c4cbc691f85d6bc77a52d238196301893f643caca1ac47f3bf0c4c62390a
+  checksum: 6764a7f784aacb930edb19af658088e5575aebfeab880c6506e1b45be03905fcf1fd22e9f1574f2a5f464ba6af80143eb514b67d9229d5038e9b7142f8099052
   languageName: node
   linkType: hard
 
@@ -2645,7 +2655,7 @@ __metadata:
     "@11ty/eleventy-navigation": ^0.3.5
     "@11ty/eleventy-plugin-rss": ^1.2.0
     "@11ty/eleventy-plugin-syntaxhighlight": 5
-    "@ampproject/toolbox-optimizer": ^2.9.0
+    "@ampproject/toolbox-optimizer": ^2.10.1
     "@rollup/plugin-terser": ^0.4.4
     any-shell-escape: ^0.1.1
     browser-sync: ^3.0.2
@@ -4468,7 +4478,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lru-cache@npm:^10.2.2":
+"lru-cache@npm:^10.2.0, lru-cache@npm:^10.2.2":
   version: 10.2.2
   resolution: "lru-cache@npm:10.2.2"
   checksum: 98e8fc93691c546f719a76103ef2bee5a3ac823955c755a47641ec41f8c7fafa1baeaba466937cc1cbfa9cfd47e03536d10e2db3158a64ad91ff3a58a32c893e

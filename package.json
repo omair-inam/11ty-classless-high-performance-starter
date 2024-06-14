@@ -45,7 +45,7 @@
     "shorthash": "0.0.2"
   },
   "dependencies": {
-    "@ampproject/toolbox-optimizer": "^2.9.0",
+    "@ampproject/toolbox-optimizer": "^2.10.1",
     "@rollup/plugin-terser": "^0.4.4",
     "any-shell-escape": "^0.1.1",
     "browser-sync": "^3.0.2",
